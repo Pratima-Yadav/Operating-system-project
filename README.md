@@ -1,1 +1,2 @@
 # Operating-system-project
+Design a scheduling program that is capable of scheduling many processes that comes in some time interval and are allocated are allocated the CPU not more than 10 time units.CPU must schedule process having short execution time first.CPU is idle for 3 time units and does not entertain any process prior this time.Scheduler must maintain a queue that keeps the order of execution of all the processes. Compute average waiting time and turnaround time.
