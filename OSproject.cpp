@@ -24,3 +24,16 @@ burst time = bt;*/
   cout<<"Enter Time Quantum:"<<tq<<endl; 
  
   cout<<"Process\t|Turnaround Time|Waiting Time"<<endl; 
+   for(time=0,i=0;remaining!=0;) 
+  { 
+    if(rt[i]<=tq && rt[i]>0) 
+    { 
+      time+=rt[i]; 
+      rt[i]=0; 
+      flag=1; 
+    } 
+    else if(rt[i]>0) 
+    { 
+      rt[i]-=tq; 
+      time+=tq; 
+    } 
